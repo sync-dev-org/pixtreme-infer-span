@@ -128,7 +128,7 @@ with stream:
 
 Opening warms up a dedicated TensorRT execution and captures one `enqueue`
 using fixed input and output storage through core's `CudaGraphSession` and
-`CudaGraphBuffers` (`pixtreme-infer>=0.14.1`, `tensoracle>=1.1.0`). Every call
+`CudaGraphBuffers` (`pixtreme-infer>=0.14.6`, `tensoracle>=1.1.0`). Every call
 validates its Frame and parameters, copies current pixels into fixed storage,
 replays the graph, and copies the output into a separate allocation carrying
 that request's metadata. Keep inputs alive until their copies finish; returned
